@@ -1,4 +1,4 @@
-# Laboratory 02: Blind SQLi with time delays
+# Laboratory 13: Blind SQLi with time delays
 # Author: Emiliano Rivas (RVXS)
 
 import requests, sys, string, urllib3
@@ -39,7 +39,6 @@ def main():
     print("-------------------\n")
 
     url = input("Enter the URL: ").strip()
-
     exploit(url)
 
 if __name__ == "__main__":

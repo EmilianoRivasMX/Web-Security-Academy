@@ -1,4 +1,4 @@
-# Laboratory 02: Blind SQLi with conditional errors
+# Laboratory 12: Blind SQLi with conditional errors
 # Author: Emiliano Rivas (RVXS)
 
 import requests, sys, string, urllib3
@@ -49,7 +49,6 @@ def main():
     print("-------------------\n")
 
     url = input("Enter the URL: ").strip()
-
     exploit(url)
 
 if __name__ == "__main__":

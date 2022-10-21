@@ -1,4 +1,4 @@
-# Laboratory 15: Blind SQLi with out-of-band interaction
+# Laboratory 17: SQLi with filter bypass via XML encoding
 # Author: Emiliano Rivas (RVXS)
 
 def exploit(url):
@@ -6,7 +6,7 @@ def exploit(url):
 
 def main():
     print("\n-------------------")
-    print("WSA Lab-15 Solver")
+    print("WSA Lab-17 Solver")
     print("-------------------\n")
 
     url = input("Enter the URL: ").strip()

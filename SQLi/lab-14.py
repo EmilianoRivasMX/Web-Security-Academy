@@ -1,4 +1,4 @@
-# Laboratory 02: Blind SQLi with time delays and information retrieval
+# Laboratory 14: Blind SQLi with time delays and information retrieval
 # Author: Emiliano Rivas (RVXS)
 
 from http import cookies
@@ -54,7 +54,6 @@ def main():
     print("-------------------\n")
 
     url = input("Enter the URL: ").strip()
-
     exploit(url)
 
 if __name__ == "__main__":
